@@ -1,0 +1,125 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	    {
+	        "path" : "pages/index/index",
+	        "style" :                                                                                    
+	        {
+	            "navigationBarTitleText": "登录"
+	        }
+	        
+	    },
+		{
+            "path" : "pages/activity/activity",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "活动",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 300
+            }
+            
+        },
+        {
+            "path" : "pages/help/help",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "求助",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 300
+            }
+            
+        }
+        ,{
+            "path" : "pages/admin/admin",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的"
+            }
+            
+        }
+        ,{
+            "path" : "pages/activity/infomation",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/help/infomation",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/help/ask",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "提问",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/help/search",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "搜索",
+                "enablePullDownRefresh": false,
+				"onReachBottomDistance": 300
+            }
+            
+        }
+        ,{
+            "path" : "pages/admin/star",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/admin/myQue",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"tabBar": {
+		"color": "#c6c7ce",
+		"selectedColor": "#ffffff",
+		"backgroundColor": "#232743",
+		"list": [
+			{
+				"pagePath": "pages/activity/activity",
+				"text": "活动",
+				"iconPath": "static/activity.png",
+				"selectedIconPath": "static/activityOn.png"
+			},
+			{
+				"pagePath": "pages/help/help",
+				"text": "求助",
+				"iconPath": "static/help.png",
+				"selectedIconPath": "static/helpOn.png"
+			},
+			{
+				"pagePath": "pages/admin/admin",
+				"text": "我的",
+				"iconPath": "static/admin.png",
+				"selectedIconPath": "static/adminOn.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
