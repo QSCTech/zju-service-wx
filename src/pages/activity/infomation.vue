@@ -51,8 +51,13 @@
 					</view>
 					
 					<view class = "info-title">推文链接</view>
-					<view class = "info-container" @tap = "copy()">
+					<view class = "info-container" @tap = "copy(act.link)">
 						<view class = "act-text" style = "color: #436ff6">{{act.link}}</view>
+					</view>
+
+					<view v-if = "act.regLink != null" class = "info-title">报名链接</view>
+					<view class = "info-container" @tap = "copy(act.regLink)">
+						<view class = "act-text" style = "color: #436ff6">{{act.regLink}}</view>
 					</view>
 				</view>
 				
@@ -114,9 +119,9 @@ data() {
 },
 
 methods: {
-	copy(){
+	copy(link){
 		uni.setClipboardData({
-			data: this.act.link,
+			data: link,
 			showToast: false,
 			success: function () {
 				console.log('复制链接成功');
